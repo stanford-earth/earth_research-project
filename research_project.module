@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Research Project feature.
+ */
+
+include_once 'research_project.features.inc';
