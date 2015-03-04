@@ -40,6 +40,9 @@ function research_project_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'stanford_8_col_banner' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -47,10 +50,10 @@ function research_project_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
         'redirect' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
       ),
       'display' => array(),

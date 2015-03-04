@@ -18,7 +18,7 @@ function research_project_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -48,22 +48,6 @@ function research_project_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'postcard_left';
   $ds_layout->settings = array(
-    'regions' => array(
-      'image' => array(
-        0 => 'field_se_rp_image',
-      ),
-      'text' => array(
-        1 => 'field_se_rp_lead',
-        2 => 'body',
-        3 => 'field__se_rb_publications',
-      ),
-    ),
-    'fields' => array(
-      'field_se_rp_image' => 'image',
-      'field_se_rp_lead' => 'text',
-      'body' => 'text',
-      'field__se_rb_publications' => 'text',
-    ),
     'classes' => array(),
     'wrappers' => array(
       'image' => 'div',
@@ -74,6 +58,22 @@ function research_project_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'regions' => array(
+      'image' => array(
+        0 => 'field_se_rp_image',
+      ),
+      'text' => array(
+        0 => 'field_se_rp_lead',
+        1 => 'body',
+        2 => 'field__se_rb_publications',
+      ),
+    ),
+    'fields' => array(
+      'field_se_rp_image' => 'image',
+      'field_se_rp_lead' => 'text',
+      'body' => 'text',
+      'field__se_rb_publications' => 'text',
+    ),
   );
   $export['node|research_project|default'] = $ds_layout;
 
@@ -135,18 +135,18 @@ function research_project_ds_layout_settings_info() {
   $ds_layout->layout = 'postcard_left';
   $ds_layout->settings = array(
     'regions' => array(
-      'text' => array(
-        0 => 'body',
-        2 => 'title',
-      ),
       'image' => array(
-        1 => 'field_se_rp_image',
+        0 => 'field_se_rp_image',
+      ),
+      'text' => array(
+        1 => 'title',
+        2 => 'body',
       ),
     ),
     'fields' => array(
-      'body' => 'text',
       'field_se_rp_image' => 'image',
       'title' => 'text',
+      'body' => 'text',
     ),
     'classes' => array(),
     'wrappers' => array(
